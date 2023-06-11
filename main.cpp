@@ -11,9 +11,9 @@ void draw(){
 	system("cls");
     for(int i=0;i<3;i++){
         for(int j=0;j<3;j++){
-            cout<<matrix[i][j]<<" ";
+            cout<<" | "<<matrix[i][j]<<" | ";
         }
-        cout<<endl;
+        cout<<endl<<"--------------------"<<endl;
     }
 }
 
@@ -58,6 +58,13 @@ void change_player(){
     else{
         player = 'X';
     }
+}
+
+void how_win(){
+	if(matrix[0][0] == 'X' && matrix[0][1] == 'X' && matrix[0][2] == 'X'){
+		return 'X';
+	}
+	
 }
 
 int main()
