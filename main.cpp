@@ -10,17 +10,22 @@ string name1,name2,mainname;
 
 void draw(){
 	system("cls");
+	cout<<"\n";
     for(int i=0;i<3;i++){
         for(int j=0;j<3;j++){
             cout<<" | "<<matrix[i][j]<<" | ";
         }
+       	if(i == 2){
+        	break;
+		}
         cout<<endl<<" -------------------"<<endl;
+
     }
 }
 
 void input(){
     int get_input;
-    cout<<mainname<<"Press the number of the field pleease: ";
+    cout<<"\n\n # Hey \""<<mainname<<"\", "<<"You are \""<<player<<"\", Press the number of the field please: ";
     cin>>get_input;
 
 
@@ -29,7 +34,7 @@ void input(){
             matrix[0][0] = player;
         }
         else{
-            cout<<"Feild already in use try again"<<endl;
+            cout<<"\n       ----*** Feild already in use try again ***----"<<endl;
             input();
         }
     }
@@ -38,7 +43,7 @@ void input(){
             matrix[0][1] = player;
         }
         else{
-            cout<<"Feild already in use try again"<<endl;
+            cout<<"\n       ----*** Feild already in use try again ***----"<<endl;
             input();
         }
     }
@@ -47,7 +52,7 @@ void input(){
             matrix[0][2] = player;
         }
         else{
-            cout<<"Feild already in use try again"<<endl;
+            cout<<"\n       ----*** Feild already in use try again ***----"<<endl;
             input();
         }
     }
@@ -56,7 +61,7 @@ void input(){
             matrix[1][0] = player;
         }
         else{
-            cout<<"Feild already in use try again"<<endl;
+            cout<<"\n       ----*** Feild already in use try again ***----"<<endl;
             input();
         }
     }
@@ -65,7 +70,7 @@ void input(){
             matrix[1][1] = player;
         }
         else{
-            cout<<"Feild already in use try again"<<endl;
+            cout<<"\n       ----*** Feild already in use try again ***----"<<endl;
             input();
         }
     }
@@ -74,7 +79,7 @@ void input(){
             matrix[1][2] = player;
         }
         else{
-            cout<<"Feild already in use try again"<<endl;
+            cout<<"\n       ----*** Feild already in use try again ***----"<<endl;
             input();
         }
     }
@@ -83,7 +88,7 @@ void input(){
             matrix[2][0] = player;
         }
         else{
-            cout<<"Feild already in use try again"<<endl;
+            cout<<"\n       ----*** Feild already in use try again ***----"<<endl;
             input();
         }
     }
@@ -92,7 +97,7 @@ void input(){
             matrix[2][1] = player;
         }
         else{
-            cout<<"Feild already in use try again"<<endl;
+            cout<<"\n       ----*** Feild already in use try again ***----"<<endl;
             input();
         }
     }
@@ -101,12 +106,12 @@ void input(){
             matrix[2][2] = player;
         }
         else{
-            cout<<"Feild already in use try again"<<endl;
+            cout<<"\n       ----*** Feild already in use try again ***----"<<endl;
             input();
         }
     }
     else if(get_input != 1,get_input != 2,get_input != 3,get_input != 4,get_input != 5,get_input != 6,get_input != 7,get_input != 8,get_input != 9){
-        cout<<"wrong input try again"<<endl;
+        cout<<"\n       ----*** Wrong input try again ***----"<<endl;
         input();
     }
 }
@@ -199,15 +204,15 @@ void game(){
     	input();
     	draw();
     	if (how_win() == 'X'){
-            cout<<mainname<<" wins"<<endl;
+            cout<<"\n\n\n ********$$$ WoW \""<<mainname<<"\" won the game"<<", congratulations $$$********"<<endl;
             break;
     	}
     	else if(how_win() == 'O'){
-            cout<<mainname<<" wins"<<endl;
+            cout<<"\n\n\n ********$$$ WoW \""<<mainname<<"\" won the game"<<", congratulations $$$********"<<endl;
             break;
     	}
         else if(how_win() == '/' && counter_gameplay == 9){
-            cout<<"no one win"<<endl;
+            cout<<"\n\n\n ----*** Unfortunately, none of you won the game, play again ***----"<<endl;
             break;
     	}
     	change_player();
@@ -217,10 +222,19 @@ void game(){
 }
 int main()
 {
+	
+    cout<<"------------------------------------------------------------------------------------------------------------------------";
+    cout<<"\n\t\t ************ Welcome to Real Time Tic_Tac_Toe 2 Player Game Project ************\n\n";
+    cout<<"\t\t\t\t\t Supervisor : Mr.Ali Bazghandi\n";
+    cout<<"\t\t\t\t\t Teacher Assistants : Mr.Foad Ataei - Mr.Amirhossein Kazemzadeh \n";
+    cout<<"\t\t\t\t\t Course : Basics of programming \n";
+	cout<<"\t\t\t\t\t Date : Spring 2023 \n";
+    cout<<"\t\t\t\t\t Shahrood University of Technology \n\n";   
+    cout<<"------------------------------------------------------------------------------------------------------------------------"<<endl;
     char try_load_game;
-    cout<<"enter name 1: "<<endl;
+    cout<<" # Please enter the name of the first player: ";
     cin>>name1;
-    cout<<"enter name 2: "<<endl;
+    cout<<"\n # Please enter the name of the second player: ";
     cin>>name2;
     mainname = name1;
     draw();
@@ -228,7 +242,7 @@ int main()
     game();
 
     while(1){
-        cout<<"do you like continue? (y/n?)"<<endl;
+        cout<<"\n\n # Would you like to play again? (y/n): ";
         cin>>try_load_game;
         if(try_load_game == 'y'){
 
@@ -242,5 +256,4 @@ int main()
         }
     }
     return 0;
-    //system("pause");
 }
