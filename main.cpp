@@ -6,8 +6,6 @@ char matrix[3][3] = {'1','2','3','4','5','6','7','8','9'};  //main matrix 3x3 to
 char player = 'X'; 
 int counter_gameplay;         //counter for game if counter == 9 game is finished
 string name1,name2,mainname;   //name of players
-int checka;
-
 
 void draw(){                   //show matrix in real time 
 	system("cls");             //replace new matrix
@@ -20,7 +18,6 @@ void draw(){                   //show matrix in real time
         	break;
 		}
         cout<<endl<<" -------------------"<<endl;
-
     }
 }
 
@@ -113,7 +110,6 @@ void input(){    //this function get a number 1 until 9 and check if input is co
         cout<<"\n       ----*** Wrong input try again ***----"<<endl;
         input();
     }
-	
 }
 
 void change_player(){        
@@ -199,6 +195,7 @@ char how_win(){   //this function check if 3 same symbol o or x finished the gam
 	}
     return '/';
 }
+
 void game(){
     while(1){
         counter_gameplay++;
