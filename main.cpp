@@ -226,7 +226,7 @@ int main()
     cout<<"\t\t\t\t\t Teacher Assistants : Mr.Foad Ataei - Mr.Amirhossein Kazemzadeh \n";
     cout<<"\t\t\t\t\t Course : Basics of programming \n";
     cout<<"\t\t\t\t\t Student : Yasin Rezvani \n";
-	cout<<"\t\t\t\t\t Date : Spring 2023 \n";
+	cout<<"\t\t\t\t\t Date : Spring 2023 \n\n";
     cout<<"\t\t\t\t\t Shahrood University of Technology \n\n";   
     cout<<"------------------------------------------------------------------------------------------------------------------------"<<endl;
     char try_load_game;
