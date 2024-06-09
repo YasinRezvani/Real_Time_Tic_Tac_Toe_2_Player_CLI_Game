@@ -222,8 +222,8 @@ int main()
 {
     cout<<"------------------------------------------------------------------------------------------------------------------------";
     cout<<"\n\t\t ************ Welcome to Real Time Tic_Tac_Toe 2 Player Game Project ************\n\n";
-    cout<<"\t\t\t\t\t Supervisor : Mr.Ali Bazghandi\n";
-    cout<<"\t\t\t\t\t Teacher Assistants : Mr.Foad Ataei - Mr.Amirhossein Kazemzadeh \n";
+    cout<<"\t\t\t\t\t Supervisor : Mr. Ali Bazghandi\n";
+    cout<<"\t\t\t\t\t Teacher Assistants : Mr. Foad Ataei, Mr. Amirhossein Kazemzadeh \n";
     cout<<"\t\t\t\t\t Course : Basics of programming \n";
     cout<<"\t\t\t\t\t Student : Yasin Rezvani \n";
 	cout<<"\t\t\t\t\t Date : Spring 2023 \n\n";
